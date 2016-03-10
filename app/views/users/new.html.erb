@@ -1,0 +1,11 @@
+<h2>New user creation</h2>
+
+<%= form_for @user do |user_form| %>
+ 	<%= user_form.label :email %>
+   <%= user_form.text_field :email %> <br> <br>
+
+    <%= user_form.label :phone %>
+    <%= user_form.text_field :phone %> <br> 
+
+    <%= user_form.submit "create" %>
+<% end %> 
